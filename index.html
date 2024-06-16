@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/svg+xml" sizes="any" href="assets/imgs/favicons/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="assets/styles/index.css">
+	<title>Отзовик</title>
+</head>
+
+<body>
+	<div id="allthing-e9910041222f" class="allthing">
+		<header class="feedback-header">
+			<div class="header-top">
+				<h1 class="mandatory-h1">Отзовик</h1>
+			</div>
+		</header>
+
+		<div class="main-container">
+			<main class="main-content">
+				<nav class="tabs-controls">
+					<ul class="controls-list">
+						<li>
+							<a id="control-new" class="selected-label" href="#">
+								Добавить
+							</a>
+						</li>
+
+						<li>
+							<a id="control-view" href="#">
+								Посмотреть
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+				<section data-tabname="new" class="feedback-tab">
+					<form id="leave-feedback-form" class="leave-feedback-form">
+						<div class="labeled">
+							<label for="product-name">Название продукта</label>
+							<input id="product-name" name="product-name" class="product-name" required>
+						</div>
+
+						<div class="labeled">
+							<label for="feedback-text">Отзыв</label>
+							<textarea id="feedback-text" name="feedback-text" class="feedback-text" required></textarea>
+						</div>
+
+						<button class="feedback-button">Добавить отзыв</button>
+					</form>
+				</section>
+
+				<section data-tabname="view" class="feedback-tab feedback-hidden">
+					<section id="products-list" class="products-list">
+						<!-- Сюда добавим список продуктов -->
+					</section>
+
+					<section id="fb-list" class="fb-list">
+						<!-- Сюда добавим список отзывов -->
+					</section>
+				</section>
+			</main>
+		</div>
+
+		<footer class="feedback-footer">
+
+		</footer>
+
+		<div class="footer-copy"></div>
+	</div>
+
+	<div class="feedback-col"></div>
+	<script src="assets/scripts/index.js"></script>
+</body>
+
+</html>

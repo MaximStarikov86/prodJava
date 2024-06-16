@@ -1,0 +1,205 @@
+html,
+body {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	height: 100dvh;
+}
+
+body {
+	background-color: whitesmoke;
+	color: black;
+	font-family: monospace;
+	font-family: 'Ubuntu Mono';
+}
+
+/* Общая часть стилей для большинства классов */
+.feedback-col,
+.feedback-row,
+.allthing,
+.feedback-header,
+.header-top,
+.mandatory-h1,
+.main-container,
+.main-content,
+.tabs-controls,
+.controls-list,
+.controls-list li,
+.controls-list a,
+.feedback-tab,
+.leave-feedback-form,
+.labeled,
+.product-name,
+.feedback-text,
+.feedback-button,
+.products-list,
+.fb-list,
+.framed {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+	padding: 0px;
+	outline: none;
+	border: 0px none transparent;
+	border-radius: 0px;
+	font-size: 1.2rem;
+	cursor: default;
+	overflow: hidden;
+}
+
+.feedback-row {
+	flex-direction: row;
+}
+
+.header-top {
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	min-height: 128px;
+	padding: 32px;
+}
+
+.mandatory-h1 {
+	font-size: 64px;
+}
+
+.allthing {
+	overflow-y: auto;
+}
+
+.main-container {
+	padding: 64px 8px;
+	align-items: center;
+}
+
+.main-content {
+	width: 400px;
+}
+
+.tabs-controls {
+	flex-direction: row;
+	justify-content: center;
+}
+
+.controls-list {
+	flex-direction: row;
+	gap: 0.5em;
+	list-style: none;
+}
+
+.controls-list li {
+	min-width: max-content;
+}
+
+.controls-list a {
+	flex-direction: row;
+	gap: 0.5em;
+	text-decoration: none;
+	min-width: max-content;
+	padding: 0.5em;
+	text-wrap: nowrap;
+	color: black;
+	cursor: pointer;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.controls-list a:hover,
+.controls-list a:focus {
+	color: darkgreen;
+}
+
+.controls-list a.selected-label {
+	border-bottom: 4px solid darkgreen;
+}
+
+.feedback-tab {
+	max-width: 600px;
+	gap: 1em;
+	padding-top: 2em;
+	text-align: justify;
+}
+
+.leave-feedback-form {
+	gap: 2em;
+}
+
+.labeled {
+	gap: 1em;
+}
+
+.product-name {
+	padding: 0.5em 1em;
+	border: 2px solid green;
+	cursor: text;
+}
+
+.product-name:hover,
+.product-name:focus {
+	border-color: darkgreen;
+}
+
+.feedback-text {
+	padding: 1em;
+	height: 128px;
+	min-height: 64px;
+	max-height: 256px;
+	resize: vertical;
+	border: 2px solid green;
+	cursor: text;
+}
+
+.feedback-text:hover,
+.feedback-text:focus {
+	border-color: darkgreen;
+}
+
+.feedback-button {
+	padding: 0.5em;
+	align-items: center;
+	color: whitesmoke;
+	background-color: green;
+	cursor: pointer;
+}
+
+.feedback-button:hover,
+.feedback-button:focus {
+	background-color: darkgreen;
+}
+
+.products-list {
+	gap: 0.5em;
+	cursor: pointer;
+}
+
+.products-list div {
+	border-bottom: 1px dotted grey;
+}
+
+.products-list div:hover {
+	color: darkgreen;
+	border-bottom: 1px dotted darkgreen;
+}
+
+.fb-list {
+	gap: 1em;
+}
+
+.framed {
+	padding: 0.5em;
+	gap: 0.5em;
+	word-wrap: break-word;
+	border: 1px solid lightgrey;
+}
+
+/*  */
+
+.feedback-hidden {
+	display: none;
+}
+
+.mt-1em {
+	margin-top: 1em;
+}
